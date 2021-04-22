@@ -1,0 +1,7 @@
+{
+  "name": "GERI-SERVICES",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

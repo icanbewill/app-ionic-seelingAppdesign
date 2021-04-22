@@ -1,0 +1,131 @@
+// ion-header {
+//      ion-toolbar {
+//      //   --background: #f8f8fa;
+//      border-bottom: 0.01em solid rgba(0, 0, 0, 0.2);
+//      }
+     
+//      --background:#fff;
+
+//      .titre{
+//           font-size: 1em !important;
+//      }
+// }
+
+ion-header {
+  h2{
+       font-weight: bold;
+  }
+  ion-item{
+       --background: transparent !important;
+  }
+}
+
+   
+   ion-content {
+     // --background: #f8f8fa;
+   }
+   
+   ion-searchbar {
+     --box-shadow: none;
+     --border-radius: 12px;
+   }
+   
+   .title {
+     font-size: 16px;
+   }
+
+   .searchcard{
+     --background: #f8f8fa;
+     border-radius: 1rem;
+     box-shadow: 0 0 1px rgba(86, 61, 124, 0.2), 0 2px 4px rgba(86, 61, 124, 0.15);
+     .titre{
+          margin-left: 20px;
+     }
+     
+     ion-item{
+
+          ion-avatar{
+               border-radius: 10%;
+          }
+
+          // ion-button{
+          //      // font-size: 20px;
+          // }
+
+          ion-icon{
+               font-size: 20px;
+               color: var(--ion-color-medium);
+               margin-right: 20px;
+          }
+          span{
+               color: var(--ion-color-medium);
+          }
+     }
+   }
+   
+   .liste{
+     ion-card{
+          --background: #f8f8fa;
+          border-radius: 15px;
+          box-shadow: 0px 3px 45px 0px rgba(58, 45, 45, 0.1);
+          // box-shadow: 0px 3px 45px 0px rgba(0, 0, 0, 0.16);
+          // box-shadow: 0 0 1px rgba(135, 133, 138, 0.2), 0 2px 4px rgba(39, 38, 39, 0.2);
+     }
+
+     .titre{
+          font-weight: bold;
+     }
+
+     ion-label{
+
+       ion-icon{
+            font-size: 15px;
+            margin-right: 12px;
+       }
+     }
+   }
+
+   ion-segment {
+     // margin: 0 10px;
+   }
+   
+   ion-segment-button {
+     text-transform: capitalize;
+     transform: scale(.8,.8);
+     --indicator-color: transparent;
+     // color: #969696;
+   
+     ion-label {
+       position: relative;
+       left: -17px;
+       font-weight: bolder;
+     }
+   }
+   
+   .segment-button-checked {
+     color: #333;
+   }
+   
+   .segment-button-checked:before {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     border-bottom: 4px solid #333;
+   
+   }
+
+   .swiper-slide-prev {
+     opacity: .5;
+     transform: rotate(-8deg);
+   }
+   
+   .swiper-slide-next {
+     opacity: .5;
+     transform: rotate(8deg);
+   }
+   
+   .swiper-slide {
+     transition: .4s all;
+   }

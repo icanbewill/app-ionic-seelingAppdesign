@@ -1,0 +1,126 @@
+<ion-header class="ion-no-border header">
+  <ion-item>
+    <ion-label class="label">
+      <h2 class="titre ion-text-uppercase">NEW PRODUCT</h2>
+      <p>Add a new product</p>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <div class="images">
+    <ion-grid class="grille_img">
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-card class="">
+          <ion-card-content>
+            <ion-icon name="camera-outline" class=""></ion-icon>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="">
+          <ion-card-content>
+            <ion-icon name="camera-outline" class=""></ion-icon>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="">
+          <ion-card-content>
+            <ion-icon name="camera-outline" class=""></ion-icon>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="ion-padding details">
+    <div class="titreh5">
+      Details
+    </div>
+
+    <form #form="ngForm" (ngSubmit)="add(form)" class="form">
+      <ion-item lines="none">
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label floating>Description</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-grid class="ion-no-margin ion-no-padding">
+        <ion-row class="">
+          <ion-col size="7" class="ion-margin-right ion-padding-right">
+            <ion-item lines="none">
+              <ion-label floating>Price</ion-label>
+              <ion-input type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="1">
+
+          </ion-col>
+          <ion-col size="4">
+            <ion-item lines="none">
+              <!-- <ion-label floating>Devise</ion-label> -->
+              <ion-select mode="ios" placeholder="Devise">
+                <ion-select-option value="0">Dollar</ion-select-option>
+                <ion-select-option value="1">Euro</ion-select-option>
+                <ion-select-option value="2">XOF</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-item lines="none">
+        <ion-label>
+          Category
+        </ion-label>
+        <ion-select mode="ios">
+          <ion-select-option value="0">Tel</ion-select-option>
+          <ion-select-option value="1">Cloth</ion-select-option>
+        </ion-select>
+        <!-- <select-searchable item-content
+            [(ngModel)]="produit.category" [items]="categories" itemValueField="art_label" searchPlaceholder="Rechercher..." searchFailText="Aucun resultat" 
+            itemTextField="art_label" [hasVirtualScroll]="true" headerColor="primary" [virtualScrollHeaderFn]="getGroupText" searchText="Recherche"  
+            [canSearch]="true" (onChange)="portChange($event)" addButtonText="Ajouter nouvelle">
+        </select-searchable> -->
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label floating>Place</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <!-- <ion-item-divider text-center color="dark" full>
+        <ion-icon name="build"></ion-icon>&nbsp;&nbsp;
+        Etat du produit
+      </ion-item-divider> -->
+      <ion-item lines="none">
+        <ion-label floating>State</ion-label>
+        <!-- <ion-select>
+          <ion-option value="neuf">Neuf (8-9 / 10)</ion-option>
+          <ion-option value="moyen">Moyen  (6-7 / 10) </ion-option>
+          <ion-option value="dejautilise">Acceptable (1 - 5/10)</ion-option>
+        </ion-select> -->
+
+        <ion-range class="ion-no-padding" pin="true" min="1" max="10" snaps="true"></ion-range>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label floating>Acquisition mode</ion-label>
+        <ion-select mode="ios">
+          <ion-select-option value="0">Livraison</ion-select-option>
+          <ion-select-option value="1">À retirer</ion-select-option>
+          <ion-select-option value="2">Main en main</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label floating>Feed</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+    </form>
+
+  </div>
+
+</ion-content>
+
+
+<div class="ion-padding-horizontal signature">
+  <ion-badge class="ion-text-center" color="danger" mode="ios">Akimbi Wil</ion-badge>
+</div>

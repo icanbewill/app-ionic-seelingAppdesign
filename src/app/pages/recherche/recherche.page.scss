@@ -1,0 +1,36 @@
+ion-header {
+     ion-toolbar {
+     //   --background: #f8f8fa;
+     border-bottom: 0.01em solid rgba(0, 0, 0, 0.2);
+     }
+     
+     --background:#fff;
+
+     ion-searchbar {
+          --box-shadow: none;
+          --border-radius: 12px;
+     }
+}
+
+// ion-list,ion-auto-complete,ion-item-divider {
+//      border-radius: 1rem;
+//      overflow: hidden;
+ 
+//      ion-item,
+//      .item:first-child,
+//      .item:last-child {
+//        border: none;
+//      }
+ 
+//      ion-datetime {
+//        padding-left: 0;
+//      } 
+// }
+
+     ion-auto-complete {
+          // width: 50vw;
+          width: 95%;
+          // border: 0.01em solid rgba(0, 0, 0, 0.2);
+          border-radius: 1.2rem;
+          overflow: hidden;
+     }

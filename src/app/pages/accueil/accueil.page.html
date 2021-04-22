@@ -1,0 +1,109 @@
+<ion-header class="ion-no-border header">
+  <!-- <ion-toolbar class="bordure">
+    <ion-title class="ion-text-center ion-text-uppercase titre">Parcourir</ion-title>
+  </ion-toolbar> -->
+
+    <ion-item>
+      <ion-label class="label">
+        <h2 class="titre ion-text-uppercase">PRODUCTS LIST</h2>
+        <p>Get all you need</p>
+      </ion-label>
+    </ion-item>
+
+  <ion-card ion-no-margin ion-margin-bottom class="full-width searchcard">
+    <ion-item tappable (click)="rechercher()" lines="none" class="">
+      <ion-icon name="search" color="" item-left></ion-icon>
+      <span class="ion-margin-left">Rechercher</span>
+    </ion-item>
+  </ion-card>
+</ion-header>
+
+<ion-content class="">
+
+
+  <!-- <div class="ion-padding-horizontal wrapper">
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-baseline">
+        <ion-col size="8">
+          <h4 class="title">
+            Recommandations
+          </h4>
+        </ion-col>
+        <ion-col size="4">
+          <h4 class="more ion-text-end">
+            Voir plus
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div> -->
+
+  <!-- <ion-segment scrollable value="1">
+    <ion-segment-button value="1" class="ion-text-center">
+      <ion-label  class="ion-text-center">Tout</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2"  class="ion-text-center">
+      <ion-label  class="ion-text-center">Autour de vous</ion-label>
+    </ion-segment-button>
+  </ion-segment> -->
+
+
+  <div class="liste">
+
+    <ion-card (click)="details(item)" class="ion-margin-bottom" *ngFor="let item of [1,2,3,4,5]">
+      <ion-item lines="none">
+        <ion-avatar  slot="start">
+          <img src="assets/images/logo.png">
+        </ion-avatar>
+
+        <ion-label class="label">
+          <h2 class="titre ion-text-uppercase">Iphone 5s</h2>
+          <p>Un texte est ici</p>
+          <!-- <p>
+            <span>
+              <ion-icon name="star" color="star"></ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star" color="star"></ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star" color="star"></ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star" color="star"></ion-icon>
+            </span>
+            <span>
+              <ion-icon name="star" color="star"></ion-icon>
+            </span>
+          </p> -->
+
+          <ion-row class="ion-no-margin ion-no-padding">
+            <ion-col size="6" class="ion-no-margin ion-no-padding">
+              <ion-item lines="none" class="ion-no-margin ion-no-padding">
+                <ion-icon color="primary" name="time-outline" slot=""></ion-icon>
+                <ion-label>
+                  srgsgss
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="6" class="ion-no-margin ion-no-padding">
+              <ion-item lines="none" class="ion-no-margin ion-no-padding">
+                <ion-icon color="primary" name="card-outline" slot=""></ion-icon>
+                <ion-label>
+                  srgsgss
+                </ion-label>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+            
+        </ion-label>
+         
+      </ion-item>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<div class="ion-padding-horizontal signature">
+  <ion-badge class="ion-text-center" color="danger" mode="ios">Akimbi Wil</ion-badge>
+</div>

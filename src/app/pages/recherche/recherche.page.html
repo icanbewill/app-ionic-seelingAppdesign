@@ -1,0 +1,24 @@
+<ion-header class="ion-no-border header">
+  <ion-toolbar class="bordure">
+    <!-- <ion-searchbar class=""></ion-searchbar> -->
+    <ion-auto-complete [dataProvider]="dataService"></ion-auto-complete>`
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="tabs/accueil"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end"  class="">
+      <ion-button (click)="openPopover()">
+        <ion-icon slot="icon-only" name="options-outline" class=""></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <ion-card ion-no-margin ion-margin-bottom class="full-width searchcard">
+    <ion-item tappable (click)="rechercher()" lines="none" class="">
+      <ion-icon name="search" color="" item-left></ion-icon>
+      <span class="ion-margin-left">Rechercher</span>
+    </ion-item>
+  </ion-card> -->
+</ion-header>
+
+<ion-content>
+
+</ion-content>
